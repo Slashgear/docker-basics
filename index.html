@@ -7,7 +7,7 @@
 		<title>Docker Basics</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -22,23 +22,34 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<style>
+			* {
+				font-family: 'Open Sans', sans-serif;
+			}
+			body {
+				background-image: url('img/aya-logo.png');
+				background-repeat: no-repeat;
+				background-position: top right;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="img/FOND-Présentation.jpg" class="title">
+				<section  class="title">
 				<aside>	<h1>Docker Basics</h1>
 					<h3><span class="by">By</span> Antoine <span class="last">Caron</span></h3>
 				</aside>
 				</section>
 
 				<section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<h3>Environment ?</h3>
 						<h3>What is a good environment for Ruby, NodeJS App ?</h3>
 						<h3>How can I move my App ?</h3>
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<h3>Example : Php App</h3>
 						<ul>
 							<li>X works on MacOSX</li>
@@ -49,84 +60,84 @@
 						</ul>
 						<img src="img/wtf.gif"/>
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<h3>We could use VM !!</h3>
 						<img src="img/jryWe.gif"/>
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<p>A server host 20 websites. Hacker ddos one of those sites.</p>
 						<p>What happen ?</p>
 					</section>
 				</section>
 				<section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<img src="img/docker.png" style="max-height:300px"/>
 						<h1>Build, Ship, Run</h1>
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<img src="img/WhatIsDocker_2_VMs_0.png" style="max-height:300px"/>
 						<img src="img/WhatIsDocker_3_Containers_1.png" style="max-height:300px">
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<iframe src="https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/" height="600px;" width="800px;">
 						</iframe>
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<p>Docker docs : <a href="https://docs.docker.com/">https://docs.docker.com/</a></p>
 						<p>Meetup</p>
 						<img src="img/meetup.png" height="300px"/>
 					</section>
 				</section>
-				<section data-background-image="img/FOND-Slide.jpg">
+				<section >
 					<img src="img/doit.gif" height="300px"/Ò>
 				</section>
 				<section>
-					<section data-markdown="slides/helloworld.md" data-background-image="img/FOND-Slide.jpg">
+					<section data-markdown="slides/helloworld.md" >
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<a href="https://asciinema.org/a/81697" target="_blank"><img src="https://asciinema.org/a/81697.png" width="1484"/></a>
 					</section>
 				</section>
 				<section >
-					<section data-markdown="slides/nginx.md" data-background-image="img/FOND-Slide.jpg">
+					<section data-markdown="slides/nginx.md" >
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<a href="https://asciinema.org/a/81700" target="_blank"><img src="https://asciinema.org/a/81700.png" /></a>
 					</section>
 				</section>
 				<section >
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<h3>Custom spring webApp</h3>
 						<a href="https://github.com/Slashgear/spring-example-docker">https://github.com/Slashgear/spring-example-docker</a>
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<a href="https://asciinema.org/a/81848" target="_blank"><img src="https://asciinema.org/a/81848.png" /></a>
 					</section>
 				</section>
 				<section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<h2>Volume ?</h2>
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg" data-markdown="slides/volumes-1.md">
+					<section  data-markdown="slides/volumes-1.md">
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg" data-markdown="slides/volumes-2.md">
+					<section  data-markdown="slides/volumes-2.md">
 					</section>
 				</section>
 				<section>
-					<section data-background-image="img/FOND-Slide.jpg" data-markdown="slides/network.md">
+					<section  data-markdown="slides/network.md">
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<a href="https://asciinema.org/a/81849" target="_blank"><img src="https://asciinema.org/a/81849.png" /></a>
 					</section>
 				</section>
 				<section>
-					<section data-background-image="img/FOND-Slide.jpg" data-markdown="slides/compose.md">
+					<section  data-markdown="slides/compose.md">
 					</section>
-					<section data-background-image="img/FOND-Slide.jpg">
+					<section >
 						<a href="https://asciinema.org/a/81851" target="_blank"><img src="https://asciinema.org/a/81851.png" /></a>
 					</section>
 				</section>
-				<section data-background-image="img/FOND-Slide.jpg">
+				<section >
 					<h1> Quizz <h1>
 				</section>
 			</div>
