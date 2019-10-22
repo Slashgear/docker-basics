@@ -37,3 +37,13 @@ Un server mutualise plusieurs VM. Si un Hacker attaque une de ces VMs, les autre
 ## Une vidéo pour résumer tout ça
 
 <iframe width="800" height="500" src="https://www.youtube-nocookie.com/embed/zO4-1D9LdDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Diff Docker vs VM
+
+![VM](./img/WhatIsDocker_2_VMs_0.png)
+
+![Docker](./img/WhatIsDocker_3_Containers_1.png)
+
+## Et maintenant
+
+![do it](./img/doit.gif)

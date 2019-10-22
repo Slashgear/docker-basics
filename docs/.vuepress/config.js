@@ -14,7 +14,7 @@ module.exports = {
     docsRepo: "Slashgear/docker-basics",
     docsDir: "docs",
     editLinks: true,
-    sidebar: ["/", "Intro.md"],
+    sidebar: ["/", "Intro.md", "Workshops.md"],
     nav: [{ text: "Home", link: "/" }]
   }
 };
