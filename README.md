@@ -11,7 +11,7 @@
     <img alt="Twitter: Slashgear_" src="https://img.shields.io/twitter/follow/Slashgear_.svg?style=social" />
   </a>
   
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/e9273c54-8ece-4e9b-9651-a9a25f4187bd/deploy-status)](https://app.netlify.com/sites/learn-docker/deploys)
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/e9273c54-8ece-4e9b-9651-a9a25f4187bd/deploy-status)](https://app.netlify.com/sites/learn-docker/deploys) [![Greenkeeper badge](https://badges.greenkeeper.io/Slashgear/docker-basics.svg)](https://greenkeeper.io/)
   
 </p>
 
