@@ -7335,10 +7335,10 @@ vuepress-plugin-container@^2.0.2:
   dependencies:
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-sitemap@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.2.0.tgz#c1f96ce9f3d5439e0091d8b09f721ddcaeae32bf"
-  integrity sha512-BqTtosgo4Sl31v1xbm0TvePLXKr+EfRIY+NCKYJHyBMRehleplDnO3DDEcUvXjo9DJNXySHCWziFqwZQ7kG0VQ==
+vuepress-plugin-sitemap@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.3.0.tgz#4fc2573b62235ca80db237fe5e407a241067318b"
+  integrity sha512-ClEpb/sUpLbiFqRi885532EcfLdB8KQ7CSU4Q8VEsk95h7Vk/MpDsdptAKvDTstY/3Rxua2xFEx2dcjTjeF8Gw==
   dependencies:
     sitemap "^3.0.0"
 
