@@ -25,6 +25,8 @@ docker pull nginx
 
 docker run -d --name nginx -p 80:80 nginx
 
+curl http://localhost
+
 docker exec -it nginx bash
 ```
 
@@ -73,3 +75,17 @@ docker network create workshop
 > A quoi sert docker compose ?
 
 Faite en sorte de faire tourner [l'application d'exemple de docker compose](https://docs.docker.com/compose/gettingstarted/)
+
+## 7. Un peu de sécu
+
+### User
+- docker run --rm -it -v /:/tmp ubuntu bash
+
+### Réseau
+- Limiter sur 127.0.0.1:80:80
+
+### Ressources
+- Limit RAM
+- Limit CPU
+
+### ENV ?
