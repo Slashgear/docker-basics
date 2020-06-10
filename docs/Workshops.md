@@ -30,8 +30,9 @@ docker exec -it nginx bash
 
 [![asciicast](https://asciinema.org/a/81700.svg)](https://asciinema.org/a/81700)
 
-## 3. Une application Springboot
+## 3. Votre première image Docker (au choix)
 
+### Java
 Utiliser la base de code https://github.com/Slashgear/spring-example-docker
 
 - Définir un fichier Dockerfile qui
@@ -40,6 +41,13 @@ Utiliser la base de code https://github.com/Slashgear/spring-example-docker
 - Accéder à votre server depuis votre machine hôte
 
 [![asciicast](https://asciinema.org/a/81848.svg)](https://asciinema.org/a/81848)
+
+### NodeJS
+Utiliser la base de code https://github.m6web.fr/a-caron/node-docker-example
+- Définir un fichier Dockerfile qui télécharge les dépendances
+- Démarrer un conteneur en se basant sur votre image
+- Accéder à votre server depuis votre machine hôte
+
 
 ## 4. Partager des fichiers entre l'hôte et le conteneur
 
