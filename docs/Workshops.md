@@ -48,6 +48,24 @@ Utiliser la base de code https://github.m6web.fr/a-caron/node-docker-example
 - Démarrer un conteneur en se basant sur votre image
 - Accéder à votre server depuis votre machine hôte
 
+### Php
+
+Dans un autre dossier, créer un fichier `index.php` contenant:
+
+```php
+<html>
+ <head>
+  <title>Test PHP</title>
+ </head>
+ <body>
+ <?php phpinfo(); ?>
+ </body>
+</html>
+```
+
+- Définir un fichier Dockerfile qui se base sur l'image `php:7-apache`
+- Ajouter votre fichier dans l'image
+- Démarrer votre conteneur et accéder à votre server
 
 ## 4. Partager des fichiers entre l'hôte et le conteneur
 
