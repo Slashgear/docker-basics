@@ -78,14 +78,47 @@ Faite en sorte de faire tourner [l'application d'exemple de docker compose](http
 
 ## 7. Un peu de sécu
 
-### User
-- docker run --rm -it -v /:/tmp ubuntu bash
+### Utilisateurs
+
+#### Sur ton ordi
+
+```bash
+echo  "Qui suis-je ? ->" $(whoami);
+
+```
+
+#### Dans ton conteneur
+
+```bash
+echo "Qui est dans mon conteneur ? ->" $(docker run --rm alpine whoami)
+
+```
+
+#### Comment faire tourner mon application avec un utilisateur spécifique ?
+
+Fill me
 
 ### Réseau
 - Limiter sur 127.0.0.1:80:80
 
 ### Ressources
-- Limit RAM
-- Limit CPU
 
-### ENV ?
+#### Memoire
+
+Lancer un conteneur `nginx` 
+
+```bash
+docker run --rm --name nginx -d nginx
+docker stats
+```
+
+Regarder la consomation RAM
+
+Maintenant, tuez, puis lancez de nouveaux un conteneur nginx en limitant sa RAM à 4N
+```
+docker run --rm --memory 4M --name nginx -d nginx
+docker stats
+
+```
+
+Que constatez-vous ?
