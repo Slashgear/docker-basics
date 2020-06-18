@@ -90,11 +90,16 @@ echo  "Qui suis-je ? ->" $(whoami);
 #### Dans ton conteneur
 
 ```bash
-echo "Qui est dans mon conteneur ? ->" $(docker run --rm alpine whoami)
+echo "Qui est dans mon conteneur ? ->" $(docker run --rm ubuntu whoami)
 
 ```
 
 #### Comment faire tourner mon application avec un utilisateur spécifique ?
+
+```bash
+docker run --rm --user nobody ubuntu whoami
+
+```
 
 Fill me
 
