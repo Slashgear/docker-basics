@@ -25,6 +25,8 @@ docker pull nginx
 
 docker run -d --name nginx -p 80:80 nginx
 
+curl http://localhost
+
 docker exec -it nginx bash
 ```
 
@@ -91,3 +93,55 @@ docker network create workshop
 > A quoi sert docker compose ?
 
 Faite en sorte de faire tourner [l'application d'exemple de docker compose](https://docs.docker.com/compose/gettingstarted/)
+
+## 7. Un peu de sécu
+
+### Utilisateurs
+
+#### Sur ton ordi
+
+```bash
+echo  "Qui suis-je ? ->" $(whoami);
+
+```
+
+#### Dans ton conteneur
+
+```bash
+echo "Qui est dans mon conteneur ? ->" $(docker run --rm ubuntu whoami)
+
+```
+
+#### Comment faire tourner mon application avec un utilisateur spécifique ?
+
+```bash
+docker run --rm --user nobody ubuntu whoami
+
+```
+
+Fill me
+
+### Réseau
+- Limiter sur 127.0.0.1:80:80
+
+### Ressources
+
+#### Memoire
+
+Lancer un conteneur `nginx` 
+
+```bash
+docker run --rm --name nginx -d nginx
+docker stats
+```
+
+Regarder la consomation RAM
+
+Maintenant, tuez, puis lancez de nouveaux un conteneur nginx en limitant sa RAM à 4N
+```
+docker run --rm --memory 4M --name nginx -d nginx
+docker stats
+
+```
+
+Que constatez-vous ?
