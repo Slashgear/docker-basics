@@ -21,9 +21,9 @@ docker run -d hello-world
 ## 2. Server nginx
 
 ```bash
-docker pull nginx
+docker pull nginx:alpine
 
-docker run -d --name nginx -p 80:80 nginx
+docker run -d --name nginx:alpine -p 80:80 nginx
 
 curl http://localhost
 
