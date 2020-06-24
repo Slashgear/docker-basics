@@ -122,7 +122,34 @@ docker run --rm --user nobody ubuntu whoami
 Fill me
 
 ### Réseau
-- Limiter sur 127.0.0.1:80:80
+
+1. Récupères ton adresse IP 
+
+```bash
+ifconfig
+```
+
+2. Démarre un container `nginx` en bindant le port `80`
+
+```bash
+docker run --rm --name nginx -d -p 80:80 nginx
+```
+
+3. Avec ton navigateur préféré, va sur l'URL http://<mon-ip> 
+
+4. Supprime ton container nginx
+
+```bash
+docker rm -f nginx
+```
+
+5. Lance de nouveau le container nginx avec l'option de bind suivante
+
+```bash
+docker run --rm --name nginx -d -p 127.0.0.1:80:80 nginx
+```
+
+6. Actualises la page web. Que constates-tu
 
 ### Ressources
 
