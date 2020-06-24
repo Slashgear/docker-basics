@@ -119,8 +119,6 @@ docker run --rm --user nobody ubuntu whoami
 
 ```
 
-Fill me
-
 ### Réseau
 
 1. Récupères ton adresse IP 
