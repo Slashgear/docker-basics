@@ -122,7 +122,34 @@ docker run --rm --user nobody ubuntu whoami
 Fill me
 
 ### Réseau
-- Limiter sur 127.0.0.1:80:80
+
+1. Récupères ton adresse IP 
+
+```bash
+ifconfig
+```
+
+2. Démarre un container `nginx` en bindant le port `80`
+
+```bash
+docker run --rm --name nginx -d -p 80:80 nginx:alpine
+```
+
+3. Avec ton navigateur préféré, va sur l'URL http://<mon-ip> 
+
+4. Supprime ton container nginx
+
+```bash
+docker rm -f nginx
+```
+
+5. Lance de nouveau le container nginx avec l'option de bind suivante
+
+```bash
+docker run --rm --name nginx -d -p 127.0.0.1:80:80 nginx:alpine
+```
+
+6. Actualises la page web. Que constates-tu
 
 ### Ressources
 
@@ -131,17 +158,18 @@ Fill me
 Lancer un conteneur `nginx` 
 
 ```bash
-docker run --rm --name nginx -d nginx
+docker run --rm --name nginx -d nginx:alpine
 docker stats
 ```
 
 Regarder la consomation RAM
 
 Maintenant, tuez, puis lancez de nouveaux un conteneur nginx en limitant sa RAM à 4N
-```
-docker run --rm --memory 4M --name nginx -d nginx
+
+```bash
+docker run --rm --memory 4M --name nginx -d nginx:alpine
 docker stats
 
 ```
 
-Que constatez-vous ?
+Que constates-tu ?
