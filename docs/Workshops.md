@@ -162,7 +162,7 @@ docker stats
 
 Regarder la consomation RAM
 
-Maintenant, tuez, puis lancez de nouveaux un conteneur nginx en limitant sa RAM à 4N
+Maintenant, tuez, puis lancez de nouveaux un conteneur nginx en limitant sa RAM à 4M
 
 ```bash
 docker run --rm --memory 4M --name nginx -d nginx:alpine
