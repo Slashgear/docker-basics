@@ -35,6 +35,7 @@ docker exec -it nginx bash
 ## 3. Votre première image Docker (au choix)
 
 ### Java
+
 Utiliser la base de code https://github.com/Slashgear/spring-example-docker
 
 - Définir un fichier Dockerfile qui
@@ -45,7 +46,9 @@ Utiliser la base de code https://github.com/Slashgear/spring-example-docker
 [![asciicast](https://asciinema.org/a/81848.svg)](https://asciinema.org/a/81848)
 
 ### NodeJS
+
 Utiliser la base de code https://github.m6web.fr/a-caron/node-docker-example
+
 - Définir un fichier Dockerfile qui télécharge les dépendances
 - Démarrer un conteneur en se basant sur votre image
 - Accéder à votre server depuis votre machine hôte
@@ -121,7 +124,7 @@ docker run --rm --user nobody ubuntu whoami
 
 ### Réseau
 
-1. Récupères ton adresse IP 
+1. Récupères ton adresse IP
 
 ```bash
 ifconfig
@@ -133,7 +136,7 @@ ifconfig
 docker run --rm --name nginx -d -p 80:80 nginx:alpine
 ```
 
-3. Avec ton navigateur préféré, va sur l'URL http://<mon-ip> 
+3. Avec ton navigateur préféré, va sur l'URL http://<mon-ip>
 
 4. Supprime ton container nginx
 
@@ -153,7 +156,7 @@ docker run --rm --name nginx -d -p 127.0.0.1:80:80 nginx:alpine
 
 #### Memoire
 
-Lancer un conteneur `nginx` 
+Lancer un conteneur `nginx`
 
 ```bash
 docker run --rm --name nginx -d nginx:alpine
