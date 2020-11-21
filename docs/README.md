@@ -1,7 +1,5 @@
 # Docker basics
 
-Pendant cet atelier, nous allons créer un Pokedex avec la bibliothèque VueJS.
-
 ## Prérequis
 
 Pour effectuer l'ensemble de ces exercices, vous avez besoin des outils suivants :
